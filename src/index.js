@@ -21,24 +21,33 @@ slidersInit('.career__slider', {
   }, 
   breakpoints: {
     768: {
-      slidesPerView: 3,
-      spaceBetween: 20
+      slidesPerView: 'auto',
+      spaceBetween: 20, 
+      pagination: false,
     },
     1024: {
-      // slidesPerView: 3,
-      spaceBetween: 26
+      slidesPerView: 'auto',
+      spaceBetween: 26,
+      pagination: false,
     },
     1240: {
-      slidesPerView: 4,
-      spaceBetween: 30
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      pagination: false,
     }
   }
 })
 
 
 // переместить
-const videoBG = document.querySelector('.video-bg');
-videoBG.innerHTML = `
+const videoBGHero = document.querySelector('.video-bg-hero');
+videoBGHero.innerHTML = `
+  <source src="video/video.webm" type="video/webm">
+  <source src="video/video.mp4" type="video/mp4">
+`;
+
+const videoBGLocation = document.querySelector('.video-bg-location');
+videoBGLocation.innerHTML = `
   <source src="video/video.webm" type="video/webm">
   <source src="video/video.mp4" type="video/mp4">
 `;

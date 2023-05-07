@@ -85,9 +85,9 @@
       justify-self: start;
     }
 
-    // @include lg {
-    //   align-self: end;
-    // }
+    @include lg {
+      align-self: end;
+    }
   }
 
   &__count-list {

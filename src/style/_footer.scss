@@ -1,0 +1,77 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  &__container {
+    @include sm {
+      display: grid;
+      gap: 40px;
+      grid-template-columns: 1fr max-content;
+    }
+
+    @include lg {
+      gap: 72px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+    width: 200px;
+
+    @include sm {
+      margin-bottom: 0;
+    }
+
+    @include lg {
+      width: 360px;
+    }
+  }
+
+  &__social-list {
+    margin-bottom: 52px;
+    display: flex;
+    gap: 16px;
+
+    @include sm {
+      margin-bottom: 0;
+    }
+
+    @include lg {
+      gap: 36px;
+    }
+  }
+
+  &__social-item {
+    
+  }
+
+  &__social-link {
+    display: block;
+    width: 36px;
+
+    @include lg {
+      width: 50px;
+    }
+  }
+
+  &__developers {
+    margin-bottom: 52px;
+    line-height: 1;
+
+    @include sm {
+      margin-bottom: 0;
+      order: 2;
+    }
+  }
+
+  &__developer {
+    margin-bottom: 19px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__copyright {
+  }
+}
