@@ -3,9 +3,13 @@ import 'swiper/scss';
 import 'swiper/scss/pagination';
 
 import { slidersInit } from './modules/sliders';
+import { menuControl } from './modules/menuControl';
+import { videoBackgroundInit } from './modules/videoBackground';
 /* Все остальные стили стараемся подключать перед index.scss */
 import './index.scss';
 
+videoBackgroundInit();
+menuControl();
 
 slidersInit('.about__slider', {
   pagination: {
@@ -37,17 +41,3 @@ slidersInit('.career__slider', {
     }
   }
 })
-
-
-// переместить
-const videoBGHero = document.querySelector('.video-bg-hero');
-videoBGHero.innerHTML = `
-  <source src="video/video.webm" type="video/webm">
-  <source src="video/video.mp4" type="video/mp4">
-`;
-
-const videoBGLocation = document.querySelector('.video-bg-location');
-videoBGLocation.innerHTML = `
-  <source src="video/video.webm" type="video/webm">
-  <source src="video/video.mp4" type="video/mp4">
-`;

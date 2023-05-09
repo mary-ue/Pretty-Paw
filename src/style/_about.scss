@@ -65,6 +65,10 @@
     @include xl {
       gap: 60px;
     }
+
+    @include xxl {
+      height: min-content;
+    }
   }
 
   &__description {
