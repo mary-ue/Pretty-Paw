@@ -10,6 +10,7 @@ import { locationHover } from './modules/locationHover';
 import { initScrollTopButton } from './modules/scrollTopButton';
 /* Все остальные стили стараемся подключать перед index.scss */
 import './index.scss';
+import { pageControlInit } from './modules/pageControl';
 
 
 videoBackgroundInit();
@@ -18,6 +19,7 @@ locationHover();
 initScrollTopButton('arrow-top', {
   hover: false,
 });
+pageControlInit();
 
 slidersInit('.about__slider', {
   pagination: {
