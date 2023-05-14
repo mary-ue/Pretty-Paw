@@ -49,12 +49,16 @@ export const menuControl = () => {
       gsap.set(navigationList, { opacity: 0, display: 'none' });
       navigationItems.forEach((elem, i) => {
         const x = i % 2 ? 500 : -500;
-        gsap.set(elem, { opacity: 0, x: x, duration: 1 });
+        gsap.set(elem, { opacity: 0, x: x, duration: 1 })
+
+        if(navigationButton.classList.contains('navigation__button_active')) {
+          tl.restart();
+        }
       });
     }
   }
 
-  const mediaQuery = window.matchMedia('(min-width: 1280px)');
+  const mediaQuery = window.matchMedia('(min-width: 1240px)');
   mediaQuery.addEventListener('change', checkScreenSize);
   checkScreenSize(mediaQuery);
 };

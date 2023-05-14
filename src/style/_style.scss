@@ -156,6 +156,9 @@ iframe {
 }
 
 .arrow-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   right: 16px;
   bottom: 30px;
   width: 36px;

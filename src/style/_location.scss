@@ -74,16 +74,16 @@
       background-color: $second;
       right: 50%;
       width: calc(100% - 32px);
-      height: 0.5px;
+      height: 1px;
       background-color: $second;
-      transform: translate(50%, 0.5px);
+      transform: translate(50%, 1px);
 
       @include lg {
         bottom: 50%;
         right: 0;
-        width: 0.5px;
+        width: 1px;
         height: calc(100% - 176px);
-        transform: translate(0.5px, 50%);
+        transform: translate(1px, 50%);
       }
 
       @include xl {
