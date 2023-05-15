@@ -56,7 +56,13 @@ export const menuControl = () => {
         }
       });
     }
-  }
+  };
+
+  navigationList.addEventListener('click', ({target}) => {
+    if (target.closest('.navigation__item')) {
+      closeMenu();
+    }
+  })
 
   const mediaQuery = window.matchMedia('(min-width: 1240px)');
   mediaQuery.addEventListener('change', checkScreenSize);
